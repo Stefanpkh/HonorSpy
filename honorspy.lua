@@ -329,7 +329,7 @@ function HonorSpy:Estimate(playerOfInterest)
 	end
 	local award = RP[bracket] + 1000 * inside_br_progress;
 	local RP = HonorSpy.db.factionrealm.currentStandings[playerOfInterest].RP;
-	local EstRP = math.floor(RP*0.8+award+.5);
+	local EstRP = math.floor(RP*0.9+award+.5);
 	local Rank = HonorSpy.db.factionrealm.currentStandings[playerOfInterest].rank;
 	local EstRank = 14;
 	local Progress = math.floor(HonorSpy.db.factionrealm.currentStandings[playerOfInterest].rankProgress*100);
